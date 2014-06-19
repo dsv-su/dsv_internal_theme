@@ -1,0 +1,498 @@
+/** Custom CSS for the DSV internal web */
+
+/* Media queries */
+@media(max-width: 767px) {
+	.region.region-page-top {
+		margin-bottom: 20px;
+	}
+
+	.container > .navbar-header {
+		margin: 0;
+	}
+
+	.navbar-header {
+		height: auto;
+	}
+
+	.navbar-header .navbar-brand {
+		font-size: 200%;
+		margin: 20px 10px 10px 10px;
+	}
+
+	.navbar-header .site-slogan {
+		font-size: 120%;
+		font-weight: 400;
+		margin-bottom: 15px;
+	}
+
+	.navbar-header > .logo {
+		display: none;
+	}
+
+	.navbar-nav {
+		margin: 7.5px 0;
+	}
+}
+
+@media(min-width: 768px) {
+	.navbar-header {
+		height: 168px;
+	}
+
+	.navbar-header .navbar-brand {
+		font-size: 260%;
+		margin: 60px 10px 20px 10px;
+	}
+
+	.navbar-header .site-slogan {
+		font-size: 145%;
+	}
+}
+
+/* Navbar header styling */
+#navbar {
+	background: none;
+	border: none;
+	margin-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.navbar-header {
+	background-color: rgb(155, 178, 206);
+	width: 100%;
+}
+
+.navbar-header-name-slogan {
+	display: inline-block;
+	height: 100%;
+}
+
+/* This is only to override Bootstrap's settings, all other stylings for this element
+   is done in .navbar-header .navbar-brand below! */
+.navbar>.container .navbar-brand {
+	margin-left: 0;
+}
+
+.navbar-header .navbar-brand {
+	color: #fff;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	line-height: 100%;
+	padding: 0 0 0 15px;
+}
+
+.navbar-header .navbar-brand:hover, 
+.navbar-header .navbar-brand:visited {
+	color: #fff;
+}
+
+/* Remove the logo's margins */
+.navbar-btn {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.navbar-header .site-slogan {
+	color: #fff;
+	padding-left: 15px;
+}
+
+/* Make the SU-logo the right size */
+.navbar-header .logo img {
+	height: 130px;
+	margin-top: 32px;
+}
+
+/* Main menu theming */
+.navbar-collapse.collapse {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.navbar-collapse > nav > .menu.nav > li > a {
+	color: #428bca;
+	font-size: 110%;
+	font-weight: 200;
+	padding: 10px 12px;
+}
+
+.navbar-collapse > nav > .menu.nav > li.active,
+.navbar-collapse > nav > .menu.nav > li.active-trail,
+.navbar-collapse > nav > .menu.nav > li > a:hover,
+.navbar-collapse > nav > .menu.nav > li > a:focus {
+	background-color: #f3f3f3;
+}
+
+.navbar-collapse > nav > .menu.nav > .active > a,
+.navbar-collapse > nav > .menu.nav > .active > a:hover,
+.navbar-collapse > nav > .menu.nav > .active > a:focus {
+	background-color: #f3f3f3;
+	color: #666 !important;
+}
+
+/* Primary sidebar styling */
+.region-sidebar-first {
+	background-color: #fff;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	padding: 0;
+}
+
+/* Shibboleth sign in styling */
+.pane-shib-auth-login-box {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Search block styling */
+#search-block-form {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.content-search {
+	margin-bottom: 10px !important;
+}
+
+/* System navigation block styling */
+#block-system-navigation {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-bottom: 10px;
+}
+
+#block-system-navigation h2 {
+	display: none;
+}
+
+#block-system-navigation > .menu.nav > li {
+	background-color: #f3f3f3;
+	margin-bottom: 4px;
+}
+
+#block-system-navigation > .menu.nav > li.active,
+#block-system-navigation > .menu.nav > li.active-trail {
+	background-image: url("../img/nav-active-bg.png");
+	background-repeat: repeat-y;
+}
+
+#block-system-navigation > .menu.nav > li > a {
+	color: #002f5f;
+	font-size: 85%;
+	line-height: 100%;
+	padding: 12px 12px 12px 16px;
+	text-transform: uppercase;
+}
+
+#block-system-navigation > .menu.nav > li > a:hover,
+#block-system-navigation > .menu.nav > li > a:focus {
+	background-image: url("../img/nav-active-bg.png");
+	background-repeat: repeat-y;
+}
+
+/* Side-pane blocks */
+.pane-block {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 84%;
+	margin-bottom: 14px;
+}
+
+.pane-block > h2 {
+	font-size: 110%;
+}
+
+.pane-block ul {
+	margin-top: 2px;
+	padding-left: 18px;
+}
+
+
+/* Home: columns styling */
+#main-page-left-column,
+#main-page-middle-column {
+	margin-bottom: 20px;
+}
+
+/* Home: side columns block styling */
+.main-page-block {
+	margin-top: 14px;
+}
+
+.main-page-block > .views-field-title {
+	color: #002f5f;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 90%;
+	font-weight: bold;
+}
+
+.main-page-block > .views-field-body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 84%;
+}
+
+.main-page-block > .views-field-body h2 {
+	font-size: 100%;
+}
+
+.main-page-block > .views-field-body img {
+	height: auto !important;
+	width: 100% !important;
+}
+
+/* "more"-links styling (site-wide, created by views in order to hint user about more content being available) */
+a.views-more-link {
+	background-image: url("../img/more_arrow.png");
+	color: transparent;
+	float: right;
+	margin-top: 10px;
+	height: 16px;
+	width: 28px;
+}
+
+/* Main page content styling */
+h1 {
+	color: #002f5f;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 185%;
+}
+
+h1 > a,
+h1 > a:hover,
+h1 > a:visited {
+	color: #002f5f;
+}
+
+h1 > a:hover {
+	cursor: pointer;
+}
+
+h2 {
+	color: rgb(0, 46, 95);
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 135%;
+	font-weight: bold;
+	margin: 0px;
+	padding-top: 12px;
+	padding-bottom: 6px;
+}
+
+h2 > a,
+h2 > a:hover,
+h2 > a:visited {
+	color: rgb(0, 46, 95);
+}
+
+h2 > a:hover {
+	text-decoration: none;
+}
+
+h3 {
+	color: rgb(0, 46, 95);
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 115%;
+	font-weight: bold;
+	margin: 0px;
+	padding-top: 12px;
+	padding-bottom: 6px;
+}
+
+h3 > a,
+h3 > a:hover,
+h3 > a:visited {
+	color: rgb(0, 46, 95);
+}
+
+h3 > a:hover {
+	text-decoration: none;
+}
+
+.main-container .nav-tabs > li > a {
+	line-height: 1;
+}
+
+.main-container .region-content {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 14px;
+}
+
+.main-container .region-content p {
+	margin-bottom: 6px;
+}
+
+.main-container .region-content img {
+	max-width: 100%;
+	height: auto !important
+}
+
+/* Home page top image styling */
+.pane-news-feed {
+	margin-bottom: 24px;
+}
+
+.view-news-feed {
+	position: relative;
+}
+
+.view-news-feed-image table {
+	margin: 0 !important;
+}
+
+.view-news-feed-image td {
+	padding: 0 !important;
+}
+
+.view-news-feed-image img {
+	height: auto !important;
+	width: 100% !important;
+}
+
+.view-news-feed > .view-content {
+	background-color: rgba(255, 255, 255, .8);
+	bottom: 2px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 84%;
+	margin-left: 2px;
+	padding: 4px 8px 8px 8px;
+	position: absolute;
+	width: 100%;
+}
+
+.view-news-feed > .view-content a {
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* Home: "Latest articles" styling */
+.pane-latest-articles > .pane-title {
+	background-color: rgb(243, 243, 243);
+	background-image: url("../img/latest-articles-head-bg.png");
+	background-repeat: repeat-y;
+	color: rgb(0, 0, 0);
+	font-weight: normal;
+	font-size: 110%;
+	padding: 8px 0 8px 24px;
+}
+
+.view-latest-articles > .view-content > .views-row {
+	border-bottom: dashed 1px rgb(200, 200, 200);
+	margin-top: 12px;
+	padding-bottom: 14px;
+}
+
+.view-latest-articles > .view-content > .views-row:last-child {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+.view-latest-articles .views-field-title {
+	display: inline-block;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 90%;
+	margin-right: 4px;
+	text-transform: uppercase;
+	vertical-align: top;
+	width: 30%;
+
+	/* Hyphenation stuff */
+/*	Cropped out if favour of js solution
+	-ms-word-break: break-all;
+	word-break: break-all;
+*/
+	/* Non standard for webkit */
+/*	
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+*/
+}
+
+.view-latest-articles .views-field-body {
+	display: inline-block;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 84%;
+	width: 68%;
+}
+
+.view-latest-articles .views-field-created,
+.view-latest-articles .views-field-field-firstname,
+.view-latest-articles .views-field-field-lastname {
+	color: #aaa;
+	font-size: 80%;
+	font-style: italic;
+}
+
+.view-latest-articles .views-field-field-firstname,
+.view-latest-articles .views-field-field-lastname {
+	display: inline-block;
+}
+
+#main-page-middle-column img {
+	height: auto !important;
+	width: 100% !important;
+}
+
+/* Panel taxonomy terms description needs a small bottom margin */
+.pane-term-description {
+	margin-bottom: 15px;
+}
+
+/* Tables styling */
+table {
+	border-collapse: separate;
+	border-spacing: 2px;
+	table-layout: fixed;
+	outline: 0;
+	width: 100%;
+	margin: 0;
+	margin-top: 15px;
+	padding: 0;
+}
+
+table td {
+	font-weight: normal;
+	padding: 8px 12px 8px 6px;
+	border-bottom: dotted 1px #f0bf99;
+	text-align: left;
+}
+
+.c_last_name .c_first_name .c_work_phone {
+	width: 20%
+}
+
+.c_email {
+	width: 30%;
+}
+
+.c_office {
+	width: 10%;
+}
+
+/* Authoring block styling */
+.authoring {
+    font-size: 80%;
+    color: #666666;
+    padding: 0;
+}
+.authoring h2 {
+    font-weight: bold;
+    font-size: 100%;
+    color: #666666;
+    padding: 0;
+}
+
+/* Footer styling */
+.footer {
+	font-size: 12px;
+	padding-top: 20px;
+}
+
+/* Taxonomy view styling */
+.taxonomy-term-description h2 {
+	font-size: 115%;
+}
+
+.views-row .taxonomy-term {
+	margin-bottom: 12px;
+}
