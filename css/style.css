@@ -49,6 +49,30 @@
 	}
 }
 
+@media print { 
+	.navbar-header {
+		display: none;
+	}
+	.region-sidebar-first {
+		display: none;
+	}
+	.navbar-collapse {
+		display: none;
+	} 
+	.nav-tabs {
+		display: none;
+	}
+	.region-page-top {
+		display: none;
+	}
+	.donthyphenate {
+		display: none;
+	}
+	.breadcrumb {
+		display: none;
+	}
+}
+
 /* Navbar header styling */
 #navbar {
 	background: none;
