@@ -53,8 +53,14 @@
 	.navbar-header {
 		display: none;
 	}
+	.navbar {
+		display: none !important;
+	}
+	#navbar {
+		display: none !important;
+	}
 	.region-sidebar-first {
-		display: none;
+		display: none !important; 
 	}
 	.navbar-collapse {
 		display: none;
@@ -70,6 +76,12 @@
 	}
 	.breadcrumb {
 		display: none;
+	}
+	.col-sm-3 {
+		display: none;
+	}
+	body.toolbar-drawer {
+		padding-top: 0px !important;
 	}
 }
 
