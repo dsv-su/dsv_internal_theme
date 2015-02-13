@@ -535,7 +535,7 @@ table td {
 
 ul.language-switcher-locale-url {
 	float: right;
-	margin-top: 10px !important;
+	margin-top: -50px !important;
 	line-height: 1.428571429;
 }
 
@@ -552,3 +552,20 @@ ul.language-switcher-locale-url li > a {
 	font-weight: 200;
 	padding: 10px 12px;
 }
+
+@media(max-width: 992px) {
+	ul.language-switcher-locale-url {
+		float: right;
+		margin-top: -55px !important;
+		line-height: 1.428571429;
+	}
+}
+
+@media(max-width: 767px) {
+	ul.language-switcher-locale-url {
+		float: right;
+		margin-right: 50px;
+		margin-top: -55px !important;
+		line-height: 1.428571429;
+	}
+}	
