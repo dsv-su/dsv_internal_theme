@@ -532,3 +532,23 @@ table td {
 .views-row .taxonomy-term {
 	margin-bottom: 12px;
 }
+
+ul.language-switcher-locale-url {
+	float: right;
+	margin-top: 10px !important;
+	line-height: 1.428571429;
+}
+
+ul.language-switcher-locale-url li {
+	display: inline;
+}
+
+ul.language-switcher-locale-url .active {
+	display: none;
+}
+
+ul.language-switcher-locale-url li > a {
+	font-size: 110%;
+	font-weight: 200;
+	padding: 10px 12px;
+}
