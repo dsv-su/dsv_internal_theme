@@ -253,7 +253,8 @@
 	margin-top: 14px;
 }
 
-.main-page-block > .views-field-title {
+.main-page-block > .views-field-title,
+.main-page-block > .views-field-title-field {
 	color: #002f5f;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 90%;
@@ -420,7 +421,8 @@ h3 > a:hover {
 	padding-bottom: 0;
 }
 
-.view-latest-articles .views-field-title {
+.view-latest-articles .views-field-title,
+.view-latest-articles .views-field-title-field {
 	display: inline-block;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 90%;
