@@ -191,27 +191,27 @@
 }
 
 /* System navigation block styling */
-#block-system-navigation {
+#block-menu-block-1 {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin-bottom: 10px;
 }
 
-#block-system-navigation h2 {
+#block-menu-block-1 h2 {
 	display: none;
 }
 
-#block-system-navigation > .menu.nav > li {
+#block-menu-block-1 > .menu.nav > li {
 	background-color: #f3f3f3;
 	margin-bottom: 4px;
 }
 
-#block-system-navigation > .menu.nav > li.active,
-#block-system-navigation > .menu.nav > li.active-trail {
+#block-menu-block-1 > .menu.nav > li.active,
+#block-menu-block-1 > .menu.nav > li.active-trail {
 	background-image: url("../img/nav-active-bg.png");
 	background-repeat: repeat-y;
 }
 
-#block-system-navigation > .menu.nav > li > a {
+#block-menu-block-1 > .menu.nav > li > a {
 	color: #002f5f;
 	font-size: 85%;
 	line-height: 100%;
@@ -219,8 +219,8 @@
 	text-transform: uppercase;
 }
 
-#block-system-navigation > .menu.nav > li > a:hover,
-#block-system-navigation > .menu.nav > li > a:focus {
+#block-menu-block-1 > .menu.nav > li > a:hover,
+#block-menu-block-1 > .menu.nav > li > a:focus {
 	background-image: url("../img/nav-active-bg.png");
 	background-repeat: repeat-y;
 }
