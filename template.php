@@ -75,3 +75,8 @@ function dsv_internal_theme_taxonomy_term_page($term = 'all') {
 		return views_embed_view('taxonomy_with_content', 'page', $term->tid);
 	}
 }
+
+function dsv_internal_theme_menu_link__menu_block($variables) {
+  return theme_menu_link($variables);
+}
+

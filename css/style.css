@@ -205,6 +205,45 @@
 	margin-bottom: 4px;
 }
 
+#block-menu-block-1 > .menu-block-1 > .menu.nav > li:hover {
+    display:block;
+}
+
+#block-menu-block-1 > .menu-block-1 > .menu.nav > li > .menu.nav {
+     display: none;
+}
+
+#block-menu-block-1 > .menu-block-1 > .menu.nav > li > .menu.nav > li > .menu.nav {
+	padding-left: 20px;
+    font-size: 12px;
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+#block-menu-block-1 > .menu-block-1 > .menu.nav li.active>a{
+	background-color: rgb(155, 178, 206);
+	color: white;
+}
+
+#block-menu-block-1 > .menu-block-1 > .menu.nav li.active.leaf{
+	background-color: rgb(155, 178, 206);
+}
+
+#block-menu-block-1 > .menu-block-1 > .menu.nav li.active.leaf a{
+	color: white;
+	background-image: none;
+}
+
+#block-menu-block-1 > .menu-block-1 > .menu.nav > li.active-trail > .menu.nav {
+    display: block;
+    background-color: white;
+}
+
+#block-menu-block-1 > .menu-block-1 > .menu.nav > li.active-trail > .menu.nav > .first.leaf {
+    margin-top: 4px;
+}
+
+
 #block-menu-block-1 > .menu-block-1 > .menu.nav > li.active,
 #block-menu-block-1 > .menu-block-1 > .menu.nav > li.active-trail {
 	background-image: url("../img/nav-active-bg.png");
