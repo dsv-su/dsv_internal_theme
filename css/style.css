@@ -220,7 +220,12 @@
 	padding-bottom: 0px !important;
 }
 
-#block-menu-block-1 > .menu-block-1 > .menu.nav li.active>a{
+#block-menu-block-1 > .menu-block-1 > .menu.nav > li > .menu.nav > li > .menu.nav a.active:hover {
+		background-color: rgb(155, 178, 206);
+	color: white;
+}
+
+#block-menu-block-1 > .menu-block-1 > .menu.nav > li > .menu.nav > li.active>a{
 	background-color: rgb(155, 178, 206);
 	color: white;
 }
