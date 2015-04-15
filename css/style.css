@@ -131,6 +131,7 @@
 .navbar-header .site-slogan {
 	color: #fff;
 	padding-left: 15px;
+	clear: left;
 }
 
 /* Make the SU-logo the right size */
