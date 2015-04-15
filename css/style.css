@@ -206,6 +206,10 @@
 	margin-bottom: 4px;
 }
 
+#block-menu-block-1 > .menu-block-1 > .menu.nav .first {
+	margin-top: 4px;
+}
+
 #block-menu-block-1 > .menu-block-1 > .menu.nav > li:hover {
     display:block;
 }
