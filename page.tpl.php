@@ -75,8 +75,12 @@
 ?>
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
   <div class="container">
+    <?php if (!empty($page['top_links'])): ?>
+      <?php print render($page['top_links']); ?>
+    <?php endif; ?>
     <div class="navbar-header">
       <div class="navbar-header-name-slogan">
+
         <?php if (!empty($site_name)): ?>
         <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
         <?php endif; ?>
@@ -84,6 +88,7 @@
         <?php if (!empty($site_slogan)): ?>
           <p class="lead site-slogan"><?php print $site_slogan; ?></p>
         <?php endif; ?>
+
       </div>
 
       <!-- NOTE: This is the SU logo! -->

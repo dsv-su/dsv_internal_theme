@@ -177,6 +177,22 @@
 	padding: 0;
 }
 
+.region-top-links {
+	background-color: rgb(155, 178, 206);
+	color: white;
+}
+
+.region-top-links a:link, .region-top-links a:active, .region-top-links a:visited {
+	color: #ffffff;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.region-top-links a:hover{
+	text-decoration: underline;
+}
+
 /* Shibboleth sign in styling */
 .pane-shib-auth-login-box {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -185,6 +201,7 @@
 /* Search block styling */
 #search-block-form {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	width: 200px;
 }
 
 .content-search {
@@ -589,9 +606,16 @@ table td {
 	margin-bottom: 12px;
 }
 
-ul.language-switcher-locale-url {
+.block-locale-language-content {
+	display: inline-block;
 	float: right;
-	margin-top: -50px !important;
+}
+
+ul.language-switcher-locale-url {
+	/*position: absolute;*/
+	float: right;
+	margin-bottom: -10px;
+	vertical-align: top;
 	line-height: 1.428571429;
 }
 
@@ -606,13 +630,13 @@ ul.language-switcher-locale-url .active {
 ul.language-switcher-locale-url li > a {
 	font-size: 110%;
 	font-weight: 200;
-	padding: 10px 12px;
+	padding: 5px 6px;
 }
 
 @media(max-width: 992px) {
 	ul.language-switcher-locale-url {
 		float: right;
-		margin-top: -55px !important;
+		margin-top: 10px !important;
 		line-height: 1.428571429;
 	}
 }
@@ -620,8 +644,7 @@ ul.language-switcher-locale-url li > a {
 @media(max-width: 767px) {
 	ul.language-switcher-locale-url {
 		float: right;
-		margin-right: 50px;
-		margin-top: -55px !important;
+		margin-top: 10px !important;
 		line-height: 1.428571429;
 	}
 }	
