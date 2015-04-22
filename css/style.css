@@ -209,6 +209,10 @@
 	margin-bottom: 10px !important;
 }
 
+.col-sm-3 {
+	float: right;
+}
+
 /* System navigation block styling */
 #block-menu-block-1 {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
