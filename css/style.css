@@ -213,6 +213,10 @@
 	float: right;
 }
 
+#aggregator .feed-source {
+	display: none;
+}
+
 /* System navigation block styling */
 #block-menu-block-1 {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
