@@ -17,7 +17,7 @@ function dsv_internal_theme_preprocess_page(&$variables) {
                         minwordlength : 4
                 });', 'inline');
 	drupal_add_js('Hyphenator.run();', 'inline');
-	menu_rebuild();
+	//menu_rebuild();
 }
 
 function dsv_internal_theme_preprocess_node(&$variables) {
@@ -31,12 +31,12 @@ function dsv_internal_theme_preprocess_node(&$variables) {
 			}
 		} else {
 			$user=user_load($variables['uid']);
-			$username=$user->name;
-			if (!isset($user->field_firstname['und'][0]['value']) || (!isset($user->field_lastname['und'][0]['value']))) {
+			$name=format_username($user);
+			/*if (!isset($user->field_firstname['und'][0]['value']) || (!isset($user->field_lastname['und'][0]['value']))) {
 				$name = $username;
 			} else {
 				$name = $user->field_firstname['und'][0]['value'] . ' ' . $user->field_lastname['und'][0]['value'];
-			}
+			}*/
 			$variables['submitted'] = 
 				t('Page editor').
 				t(': !author', array('!author' => $name)).

@@ -213,6 +213,10 @@
 	float: right;
 }
 
+#block-system-main .col-sm-9 {
+	float: left;
+}
+
 #aggregator .feed-source {
 	display: none;
 }
