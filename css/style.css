@@ -200,6 +200,11 @@
 }
 
 /* Search block styling */
+
+#block-search-form {
+	float: right !important;
+}
+
 #search-block-form {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	width: 200px;
