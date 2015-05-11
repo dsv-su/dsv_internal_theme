@@ -214,14 +214,6 @@
 	margin-bottom: 10px !important;
 }
 
-#block-system-main .col-sm-3 {
-	float: right;
-}
-
-#block-system-main .col-sm-9 {
-	float: left;
-}
-
 #aggregator .feed-source {
 	display: none;
 }
@@ -666,3 +658,12 @@ ul.language-switcher-locale-url li > a {
 		line-height: 1.428571429;
 	}
 }	
+
+@media(max-width: 398px) {
+	.view-latest-articles .views-field-body {
+		width: 100%;
+	}
+	.view-latest-articles .views-field-title-field {
+		width: 100% !important;
+	}	
+}

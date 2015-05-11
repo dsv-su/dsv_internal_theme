@@ -13,13 +13,15 @@ function dsv_internal_theme_preprocess_page(&$variables) {
 	if (isset($variables['node']->nid) && ($variables['node']->nid == 41)) {
 		drupal_add_js('//www2.dsv.su.se/js/dsv-pp.js', array('type' => 'external', 'scope' => 'footer'));
 	}
+	/*
 	drupal_add_js('sites/all/themes/custom/dsv_internal_theme/js/hyphenation/Hyphenator.js');
 	drupal_add_js('Hyphenator.config({
 					displaytogglebox : true,
 					minwordlength : 4
 					});', 'inline');
 	drupal_add_js('Hyphenator.run();', 'inline');
-	//menu_rebuild();
+	menu_rebuild();
+	*/
 }
 
 function dsv_internal_theme_preprocess_node(&$variables) {
