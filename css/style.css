@@ -659,11 +659,26 @@ ul.language-switcher-locale-url li > a {
 	}
 }	
 
+@media(min-width: 399px) {
+	.col-md-8 .contextual-links-region {
+		display: none;
+	}		
+	.content_left .contextual-links-region {
+		display: block;
+	}
+}
+
 @media(max-width: 398px) {
 	.view-latest-articles .views-field-body {
 		width: 100%;
 	}
 	.view-latest-articles .views-field-title-field {
 		width: 100% !important;
+	}
+	.content_middle_left .contextual-links-region {
+		display: block;
 	}	
+	.content_left .contextual-links-region {
+		display: none;
+	}
 }
