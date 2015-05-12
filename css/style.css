@@ -43,9 +43,16 @@
 		display: block;
 	}
 
+	.content_middle_left .contextual-links-region .pane-content>div {
+		vertical-align: top;
+		display: inline-block;
+		margin: 10px;
+	}
+
 	.content_left .contextual-links-region {
 		display: none;
 	}
+
 }
 
 @media(min-width: 768px) {
@@ -65,6 +72,12 @@
 	.content_middle_left .contextual-links-region {
 		display: none;
 	}	
+
+	.content_left .contextual-links-region .pane-content>div {
+		vertical-align: top;
+		display: block;
+		margin-bottom: 15px;
+	}
 
 	.content_left .contextual-links-region {
 		display: block;
