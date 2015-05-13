@@ -61,6 +61,14 @@
 	.content_left #main-page-right-column .field-content>p>img {
 		display: none;
 	}
+
+	.view-id-main_page_right_column .views-field-title {
+		display: none;
+	}
+
+	.view-id-main_page_right_column .views-field-title img {
+		display: none;
+	}
 }
 
 @media(min-width: 768px) {
