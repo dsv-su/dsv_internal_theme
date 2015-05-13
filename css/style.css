@@ -58,11 +58,7 @@
 		display: none;
 	}
 
-	.content_left #main-page-left-column .views-field-body>p>img {
-		display: none;
-	}
-
-	.content_left #main-page-left-column .views-field-title {
+	.content_left #main-page-left-column .views-field-body img {
 		display: none;
 	}
 }
