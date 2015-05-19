@@ -242,6 +242,10 @@
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.aggregator .feed-item {
+	padding-bottom: 15px;
+}
+
 /* Search block styling */
 
 #block-search-form {

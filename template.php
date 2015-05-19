@@ -121,3 +121,12 @@ function dsv_internal_theme_menu_link(array $variables) {
   $output = l($element['#title'], $element['#href'], $element['#localized_options']);
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
+
+function dsv_internal_theme_aggregator_block_item($variables) {
+  // Display the external link to the item.
+  return '<a target="_blank" href="' . check_url($variables['item']->link) . '">' . check_plain($variables['item']->title) . "</a>\n";
+}
+
+function dsv_internal_theme_more_link ($variables) {
+  return '<div class="more-link">' . l(strtolower(t('More'))."...", $variables['url'], array('attributes' => array('title' => $variables['title']))) . '</div>';
+}
