@@ -242,7 +242,7 @@
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.aggregator .feed-item {
+#aggregator .feed-item {
 	padding-bottom: 15px;
 }
 
