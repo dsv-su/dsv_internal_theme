@@ -130,3 +130,24 @@ function dsv_internal_theme_aggregator_block_item($variables) {
 function dsv_internal_theme_more_link ($variables) {
   return '<div class="more-link">' . l(strtolower(t('More'))."...", $variables['url'], array('attributes' => array('title' => $variables['title']))) . '</div>';
 }
+
+function dsv_internal_theme_breadcrumb ($variables) {
+  $output = '';
+  $breadcrumb = $variables['breadcrumb'];
+  // Determine if we are to display the breadcrumb.
+  $bootstrap_breadcrumb = theme_get_setting('bootstrap_breadcrumb');
+  if (($bootstrap_breadcrumb == 1 || ($bootstrap_breadcrumb == 2 && arg(0) == 'admin')) && !empty($breadcrumb)) {
+    if (menu_get_active_title()) {
+  		end($breadcrumb);
+		$breadcrumb[key($breadcrumb)]['data'] = menu_get_active_title();
+  	}
+    $output = theme('item_list', array(
+      'attributes' => array(
+        'class' => array('breadcrumb'),
+      ),
+      'items' => $breadcrumb,
+      'type' => 'ol',
+    ));
+  }
+  return $output;
+}
