@@ -67,6 +67,10 @@
 		display: none;
 	}
 
+	.content_left .pane-aggregator-feed-1 {
+		display: none;
+	}
+
 	.content_middle_top .pane-news-feed-image {
 		display: none;
 	}
@@ -94,6 +98,9 @@
 		display: none;
 	}	
 
+	.content_middle_left .pane-aggregator-feed-1 {
+		display: none;
+	}
 	.content_middle_left>.pane-driftinformation-fr-n-dmc {
 		display: none;
 	}
