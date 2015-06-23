@@ -39,18 +39,30 @@
 		line-height: 1.428571429;
 	}
 
-	.content_middle_left .contextual-links-region {
+	.content_middle_left .pane-block-5 {
 		display: block;
 	}
 
-	.content_middle_left .contextual-links-region .pane-content>div {
+	.content_middle_left > .pane-driftinformation-fr-n-dmc {
+		font-size: 11.7600002288818px;
+	}
+
+	.content_middle_left > .pane-driftinformation-fr-n-dmc h2 {
+		font-size: 12.9359998703003px;
+	}
+
+	.content_middle_left .pane-block-5 .pane-content>div {
 		vertical-align: top;
 		display: inline-block;
 		margin: 10px 10px 10px 0px;
 		width: 130px;
 	}
 
-	.content_left .contextual-links-region {
+	.content_left .pane-block-5 {
+		display: none;
+	}
+
+	.content_left .pane-driftinformation-fr-n-dmc {
 		display: none;
 	}
 
@@ -77,17 +89,21 @@
 		font-size: 145%;
 	}
 
-	.content_middle_left .contextual-links-region {
+	.content_middle_left .pane-block-5 {
 		display: none;
 	}	
 
-	.content_left .contextual-links-region .pane-content>div {
+	.content_middle_left>.pane-driftinformation-fr-n-dmc {
+		display: none;
+	}
+
+	.content_left .pane-block-5 .pane-content>div {
 		vertical-align: top;
 		display: block;
 		margin-bottom: 14px;
 	}
 
-	.content_left .contextual-links-region {
+	.content_left .pane-block-5 {
 		display: block;
 	}
 }
