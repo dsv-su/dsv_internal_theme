@@ -688,7 +688,7 @@ table td {
 ul.language-switcher-locale-url {
 	/*position: absolute;*/
 	float: right;
-	margin-bottom: -10px;
+	/*margin-bottom: -10px;*/
 	vertical-align: top;
 	line-height: 1.428571429;
 }
