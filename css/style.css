@@ -432,7 +432,7 @@ a.views-more-link {
 	background-image: url("../img/more_arrow.png");
 	color: transparent;
 	float: right;
-	margin-top: 10px;
+	margin-top: 1px;
 	height: 16px;
 	width: 28px;
 }
