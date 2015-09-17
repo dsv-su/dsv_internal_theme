@@ -567,6 +567,7 @@ h3 > a:hover {
 	margin-top: 12px;
 	padding-bottom: 14px;
 	float:left;
+	width: 100%;
 }
 
 .view-latest-articles > .view-content > .views-row:last-child {
