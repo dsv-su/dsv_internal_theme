@@ -735,6 +735,15 @@ ul.language-switcher-locale-url li > a {
 	}
 }
 
+/* Hack to hide year in Time (date) for Calendar item
+We need to use Date type for Time only.
+*/
+
+.form-item-field-tid-und-0-value-year,
+.form-item-field-tid-und-0-value2-year {
+	display: none;
+}
+
 @media(max-width: 398px) {
 	.view-latest-articles .views-field-body {
 		width: 100%;
