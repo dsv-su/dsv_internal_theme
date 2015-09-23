@@ -744,7 +744,7 @@ We need to use Date type for Time only.
 	display: none;
 }
 
-.node-calendar-item .field-main-body {
+.node-calendar-item .field-name-body {
 	margin-top: 14px;
 }
 
