@@ -744,12 +744,17 @@ We need to use Date type for Time only.
 	display: none;
 }
 
+.node-calendar-item .field-main-body {
+	margin-top: 14px;
+}
+
 .view-id-feed_calendar_items .views-row{
-background-image: url("../img/big-calendar-bg.gif");
-background-repeat: no-repeat;
-display: block;
-min-height: 52px;
-color: #002E5F;
+	background-image: url("../img/big-calendar-bg.gif");
+	background-repeat: no-repeat;
+	display: block;
+	min-height: 52px;
+	color: #002E5F;
+	margin-bottom: 5px;
 }
 
 .view-id-feed_calendar_items .views-field-field-date .date-display-single {
