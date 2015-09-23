@@ -378,13 +378,13 @@
 }
 
 /* Side-pane blocks */
-.pane-block {
+.pane-block, .pane-feed-calendar-items {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 84%;
 	margin-bottom: 14px;
 }
 
-.pane-block > h2 {
+.pane-block > h2, .pane-feed-calendar-items > h2 {
 	font-size: 110%;
 }
 
@@ -742,6 +742,40 @@ We need to use Date type for Time only.
 .form-item-field-tid-und-0-value-year,
 .form-item-field-tid-und-0-value2-year {
 	display: none;
+}
+
+.view-id-feed_calendar_items .views-row{
+background-image: url("../img/big-calendar-bg.gif");
+background-repeat: no-repeat;
+display: block;
+min-height: 52px;
+color: #002E5F;
+}
+
+.view-id-feed_calendar_items .views-field-field-date .date-display-single {
+    display: block;
+    width: 37px;
+    font-weight: bold;
+    font-size: 130%;
+    text-align: center;
+    padding-top: 7px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.view-id-feed_calendar_items .views-field-field-date-1 .date-display-single {
+	display: block;
+    width: 37px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 80%;
+    text-transform: uppercase;
+    margin-top: 3px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.view-id-feed_calendar_items .views-field-title {
+	margin-left: 50px;
+	margin-top: -34px;
 }
 
 @media(max-width: 398px) {
