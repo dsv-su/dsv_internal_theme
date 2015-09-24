@@ -128,7 +128,7 @@ function dsv_internal_theme_aggregator_block_item($variables) {
 }
 
 function dsv_internal_theme_more_link ($variables) {
-  return '<div class="more-link">' . l(strtolower(t('View more')), $variables['url'], array('attributes' => array('title' => $variables['title']))) . '</div>';
+  return '<div class="more-link">' . l((t('View more'), $variables['url'], array('attributes' => array('title' => $variables['title']))) . '</div>';
 }
 
 function dsv_internal_theme_breadcrumb ($variables) {
