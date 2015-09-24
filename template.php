@@ -140,8 +140,6 @@ function dsv_internal_theme_breadcrumb ($variables) {
     if (menu_get_active_title()) {
   		end($breadcrumb);
 		$breadcrumb[key($breadcrumb)]['data'] = menu_get_active_title();
-    var_dump($breadcrumb[key($breadcrumb)]);
-    var_dump('STOP');
   	}
     $output = theme('item_list', array(
       'attributes' => array(
