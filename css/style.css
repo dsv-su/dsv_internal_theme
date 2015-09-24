@@ -779,6 +779,7 @@ We need to use Date type for Time only.
 }
 
 .view-id-feed_calendar_items .views-field-title {
+	display: block;
 	margin-left: 50px;
 	margin-top: -34px;
 }
