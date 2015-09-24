@@ -128,7 +128,7 @@ function dsv_internal_theme_aggregator_block_item($variables) {
 }
 
 function dsv_internal_theme_more_link ($variables) {
-  return '<div class="more-link">' . l(strtolower(t('More'))."...", $variables['url'], array('attributes' => array('title' => $variables['title']))) . '</div>';
+  return '<div class="more-link">' . l(strtolower(t('View more')), $variables['url'], array('attributes' => array('title' => $variables['title']))) . '</div>';
 }
 
 function dsv_internal_theme_breadcrumb ($variables) {
@@ -140,6 +140,8 @@ function dsv_internal_theme_breadcrumb ($variables) {
     if (menu_get_active_title()) {
   		end($breadcrumb);
 		$breadcrumb[key($breadcrumb)]['data'] = menu_get_active_title();
+    var_dump($breadcrumb[key($breadcrumb)]);
+    var_dump('STOP');
   	}
     $output = theme('item_list', array(
       'attributes' => array(
