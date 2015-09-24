@@ -611,6 +611,7 @@ h3 > a:hover {
 
 .view-latest-articles .view-footer {
 	clear: left;
+	padding-top: 10px;
 }
 
 .view-latest-articles .views-field-created,
