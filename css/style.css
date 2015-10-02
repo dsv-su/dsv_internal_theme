@@ -774,19 +774,22 @@ We need to use Date type for Time only.
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.view-id-feed_calendar_items .view-display-id-block .views-field-title {
+.view-id-feed_calendar_items .views-field-title {
 	display: block;
 	margin-left: 50px;
 	margin-top: -34px;
 }
 
-.view-id-feed_calendar_items .view-display-id-page_1 .views-field-title {
+.view-display-id-page_1 .views-field-title {
 	display: block;
 	margin-top: -50px;
+	margin-left: 50px;
 } 
 
-.view-id-feed_calendar_items .view-display-id-page_1 .views-field-title a { 
+.view-display-id-page_1 .views-field-title a { 
 	color: #002E5F;
+	font-weight: bold;
+	font-size: 110%;
 }
 
 .view-id-feed_calendar_items .views-field-body {
