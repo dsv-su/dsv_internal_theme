@@ -56,7 +56,7 @@ function dsv_internal_theme_preprocess_node(&$variables) {
 */
 function dsv_internal_theme_menu_alter(&$menu) {
 	if (isset($menu['taxonomy/term/%taxonomy_term'])) {
-		$menu['taxonomy/term/%taxonomy_term']['page callback'] = 'dsv_internal_theme_taxonomy_term_page';
+	//	$menu['taxonomy/term/%taxonomy_term']['page callback'] = 'dsv_internal_theme_taxonomy_term_page';
 	}
 }
 /**
@@ -130,7 +130,7 @@ function dsv_internal_theme_aggregator_block_item($variables) {
 function dsv_internal_theme_more_link ($variables) {
   if ($variables['url'] == 'aggregator/sources/1') {
     return '<div class="more-link">' . l(t('View more'), $variables['url'], array('attributes' => array('title' => $variables['title']))) .
-    ' | ' . l(t('Subscribe'), 'https://lists.su.se/mailman/listinfo/driftinfo-at-su.se', array('attributes' => array('title' => t('Subscribe')))) . '</div>';
+    ' | ' . l(t('Subscribe'), 'https://lists.su.se/mailman/listinfo/driftinfo-at-su.se', array('attributes' => array('title' => t('Subscribe'), 'target' => '_blank'))) . '</div>';
   } else {
     return '<div class="more-link">' . l(t('View more'), $variables['url'], array('attributes' => array('title' => $variables['title']))) . '</div>';    
   }
