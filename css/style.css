@@ -753,6 +753,10 @@ We need to use Date type for Time only.
 	margin-bottom: 5px;
 }
 
+.view-id-feed_calendar_items .view-header {
+	margin-bottom: 20px;
+}
+
 .view-id-feed_calendar_items .views-field-field-date .date-display-single {
     display: block;
     width: 37px;
