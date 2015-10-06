@@ -128,7 +128,12 @@ function dsv_internal_theme_aggregator_block_item($variables) {
 }
 
 function dsv_internal_theme_more_link ($variables) {
-  return '<div class="more-link">' . l(t('View more'), $variables['url'], array('attributes' => array('title' => $variables['title']))) . '</div>';
+  if ($variables['url'] == 'aggregator/sources/1') {
+    return '<div class="more-link">' . l(t('View more'), $variables['url'], array('attributes' => array('title' => $variables['title']))) .
+    ' | ' . l(t('Subscribe'), 'https://lists.su.se/mailman/listinfo/driftinfo-at-su.se', array('attributes' => array('title' => t('Subscribe')))) . '</div>';
+  } else {
+    return '<div class="more-link">' . l(t('View more'), $variables['url'], array('attributes' => array('title' => $variables['title']))) . '</div>';    
+  }
 }
 
 function dsv_internal_theme_breadcrumb ($variables) {
