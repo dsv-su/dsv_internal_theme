@@ -774,14 +774,14 @@ We need to use Date type for Time only.
     font-weight: bold;
     font-size: 80%;
     text-transform: uppercase;
-    margin-top: 3px;
+    margin-top: 5px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .view-id-feed_calendar_items .views-field-title-field {
 	display: block;
 	margin-left: 50px;
-	margin-top: -34px;
+	margin-top: -40px;
 }
 
 .view-display-id-page_1 .views-field-title-field {
@@ -789,6 +789,16 @@ We need to use Date type for Time only.
 	margin-top: -50px;
 	margin-left: 50px;
 } 
+
+.view-display-id-page_1 .views-row {
+	margin-bottom: 30px;
+	background-size: 40px 58px;
+	min-height: 58px;
+}
+
+.view-display-id-page_1 .views-field-body {
+	color: #333;
+}
 
 .view-display-id-page_1 .views-field-title-field a { 
 	color: #002E5F;
