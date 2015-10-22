@@ -557,7 +557,7 @@ h3 > a:hover {
 	background-image: url("../img/latest-articles-head-bg.png");
 	background-repeat: repeat-y;
 	color: rgb(0, 0, 0);
-	font-weight: normal;
+	font-weight: bold;
 	font-size: 110%;
 	padding: 8px 0 8px 24px;
 }
