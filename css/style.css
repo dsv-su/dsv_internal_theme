@@ -565,7 +565,7 @@ h3 > a:hover {
 .view-latest-articles > .view-content > .views-row {
 	border-bottom: dashed 1px rgb(200, 200, 200);
 	margin-top: 12px;
-	padding-bottom: 14px;
+	padding-bottom: 12px;
 	float:left;
 	width: 100%;
 }
@@ -582,9 +582,8 @@ h3 > a:hover {
 	font-size: 90%;
 	margin-right: 4px;
 	text-transform: uppercase;
-	vertical-align: top;
-	width: 30%;
-	float:left;
+	/*vertical-align: top;*/
+	width: 70%;
 
 	/* Hyphenation stuff */
 /*	Cropped out if favour of js solution
@@ -620,16 +619,12 @@ h3 > a:hover {
 	color: #aaa;
 	font-size: 80%;
 	font-style: italic;
+	display: inline-block;
 }
 
 .view-latest-articles .views-field-created {
-	clear: left;
 	font-size: 100%;
-}
-
-.view-latest-articles .views-field-field-firstname,
-.view-latest-articles .views-field-field-lastname {
-	display: inline-block;
+	width: 100px;
 }
 
 #main-page-middle-column img {
