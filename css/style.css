@@ -570,6 +570,10 @@ h3 > a:hover {
 	width: 100%;
 }
 
+.view-latest-articles > .view-content > .views-row:first-child {
+	margin-top: 12px;
+}
+
 .view-latest-articles > .view-content > .views-row:last-child {
 	border-bottom: none;
 	padding-bottom: 0;
