@@ -583,7 +583,7 @@ h3 > a:hover {
 .view-latest-articles .views-field-title-field {
 	display: inline-block;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 90%;
+	font-size: 100%;
 	margin-right: 4px;
 	/*text-transform: uppercase;*/
 	/*vertical-align: top;*/
@@ -627,7 +627,7 @@ h3 > a:hover {
 }
 
 .view-latest-articles .views-field-created {
-	font-size: 100%;
+	font-size: 105%;
 	width: 100px;
 	vertical-align: top;
 	font-style: normal;
