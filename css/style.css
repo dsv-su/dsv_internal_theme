@@ -620,7 +620,7 @@ h3 > a:hover {
 .view-latest-articles .views-field-created,
 .view-latest-articles .views-field-field-firstname,
 .view-latest-articles .views-field-field-lastname {
-	color: #aaa;
+	color: #666666;
 	font-size: 80%;
 	font-style: italic;
 	display: inline-block;
