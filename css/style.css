@@ -564,8 +564,8 @@ h3 > a:hover {
 
 .view-latest-articles > .view-content > .views-row {
 	border-bottom: dashed 1px rgb(200, 200, 200);
-	margin-top: 12px;
-	padding-bottom: 12px;
+	margin-top: 8px;
+	padding-bottom: 8px;
 	float:left;
 	width: 100%;
 }
@@ -581,7 +581,7 @@ h3 > a:hover {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 90%;
 	margin-right: 4px;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	/*vertical-align: top;*/
 	width: 70%;
 
@@ -626,6 +626,7 @@ h3 > a:hover {
 	font-size: 100%;
 	width: 100px;
 	vertical-align: top;
+	font-style: normal;
 }
 
 #main-page-middle-column img {
