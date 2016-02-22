@@ -261,6 +261,29 @@
 	text-decoration: underline;
 }
 
+/* Image gallery styling */
+.view-image-gallery table td {
+	border-bottom: none;
+}
+
+.view-image-gallery .views-field-field-descritpion {
+	height: 40px;
+}
+
+.view-image-gallery td {
+	vertical-align: top;
+}
+
+.view-image-gallery .views-field-nothing {
+	margin-bottom: 16px;
+}
+
+.view-image-gallery .views-field-field-picture {
+	max-height: 220px;
+	margin-top: 6px;
+	margin-bottom: 12px;
+}
+
 /* Shibboleth sign in styling */
 .pane-shib-auth-login-box {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
