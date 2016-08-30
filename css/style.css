@@ -150,6 +150,15 @@
 	body.toolbar-drawer {
 		padding-top: 0px !important;
 	}
+	a[href]:after {
+	content: none !important;
+	}
+	.dsv-staff-table td {
+		display: table-cell !important;
+	}
+	.noprint {
+		display: none !important;
+	}
 }
 
 /* Navbar header styling */
