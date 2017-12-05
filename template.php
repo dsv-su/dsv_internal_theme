@@ -13,6 +13,11 @@ function dsv_internal_theme_preprocess_page(&$variables) {
 	if (isset($variables['node']->nid) && ($variables['node']->nid == 41)) {
 		drupal_add_js('//www2.dsv.su.se/js/dsv-pp.js', array('type' => 'external', 'scope' => 'footer'));
 	}
+	global $_SESSION;
+	if (!isset($_SESSION['login_reloaded'])) {
+		$_SESSION['login_reloaded'] = 1;
+		header("Refresh:0");
+	}
 }
 
 function dsv_internal_theme_preprocess_node(&$variables) {
