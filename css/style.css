@@ -526,6 +526,16 @@ h3 > a:hover {
 	text-decoration: none;
 }
 
+h4 {
+	color: rgb(0, 46, 95);
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 105%;
+	font-weight: bold;
+	margin: 0px;
+	padding-top: 12px;
+	padding-bottom: 6px;
+}
+
 .main-container .nav-tabs > li > a {
 	line-height: 1;
 }

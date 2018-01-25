@@ -25,7 +25,7 @@ function dsv_internal_theme_preprocess_node(&$variables) {
 		if ($variables['teaser']) {
 			$variables['submitted'] = '';
 			// Remove images for 'page' content type
-			if ($variables['type'] == 'page') {
+			if ($variables['type'] == 'page' && isset($variables['content']['body'])) {
 				$variables['content']['body']['0']['#markup'] = preg_replace('/<(\s*)img[^<>]*>/i', '', $variables['content']['body']['0']['#markup']);
 				$variables['content']['body']['0']['#markup'] = str_replace('[[dsv_staff]]', '', $variables['content']['body']['0']['#markup']);
 			}
