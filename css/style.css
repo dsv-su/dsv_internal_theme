@@ -493,7 +493,7 @@ h2 {
 	font-weight: bold;
 	margin: 0px;
 	padding-top: 12px;
-	padding-bottom: 6px;
+	padding-bottom: 12px;
 }
 
 h2 > a,
@@ -742,6 +742,34 @@ table td {
 
 .views-row .taxonomy-term {
 	margin-bottom: 12px;
+}
+
+.view-newsfeed>.view-content .views-row,
+.view-taxonomy-with-content>.view-content .views-row {
+	border-bottom: dashed 1px rgb(200, 200, 200);
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.view-taxonomy-with-content>.view-content .views-row h2 {
+	font-size: 115%;
+
+}
+
+.prefix_node_creation_date {
+	display: none;
+}
+
+.view-newsfeed .prefix_node_creation_date,
+.view-taxonomy-with-content .prefix_node_creation_date {
+	display: block;
+    vertical-align: top;
+    font-size: 115%;
+    padding-top: 12px;
+    float:right;
+    font-style: normal;
+    color: #666666;
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .block-locale-language-content {

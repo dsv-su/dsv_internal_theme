@@ -23,7 +23,14 @@ function dsv_internal_theme_preprocess_page(&$variables) {
 function dsv_internal_theme_preprocess_node(&$variables) {
 	if ($variables['submitted']) {
 		if ($variables['teaser']) {
+      // We add a date to teaser views and align to the left of the title
+      $variables['title_prefix'] = '<div class=prefix_node_creation_date>'.format_date($variables['node']->created, 'custom', 'Y-m-d').'</div>';
+      // Remove classis 'submitted by' string
 			$variables['submitted'] = '';
+      // Strip tags for teasers
+      if (isset($variables['content']['body'])) {
+        $variables['content']['body']['0']['#markup'] = strip_tags($variables['content']['body']['0']['#markup']);
+      }
 			// Remove images for 'page' content type
 			if ($variables['type'] == 'page' && isset($variables['content']['body'])) {
 				$variables['content']['body']['0']['#markup'] = preg_replace('/<(\s*)img[^<>]*>/i', '', $variables['content']['body']['0']['#markup']);
