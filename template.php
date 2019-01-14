@@ -29,7 +29,7 @@ function dsv_internal_theme_preprocess_node(&$variables) {
 			$variables['submitted'] = '';
       // Strip tags for teasers
       if (isset($variables['content']['body'])) {
-        $variables['content']['body']['0']['#markup'] = strip_tags($variables['content']['body']['0']['#markup']);
+        $variables['content']['body']['0']['#markup'] = strip_tags($variables['content']['body']['0']['#markup'], '<a>, <br>');
       }
 			// Remove images for 'page' content type
 			if ($variables['type'] == 'page' && isset($variables['content']['body'])) {

@@ -100,7 +100,7 @@
   </div>
 
   <?php if ($display_submitted): ?>
-    <div class="submitted" style='margin-top:10px;'>
+    <div class="submitted" style='margin-top:30px;'>
       <?php print $submitted; ?>
     </div>
   <?php endif; ?>
