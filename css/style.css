@@ -357,7 +357,7 @@
 
 #block-menu-block-1 > .menu-block-1 > .menu.nav > li > .menu.nav > li > .menu.nav > li > .menu.nav {
 	padding-left: 20px;
-	qfont-size: 12px;
+	font-size: 12px;
 	padding-top: 0px !important;
 	padding-bottom: 0px !important;
 }
@@ -771,7 +771,6 @@ table td {
 .view-taxonomy-with-content>.view-content .views-row h2,
 .view-forskarutbildning .views-row h2 {
 	font-size: 115%;
-
 }
 
 .prefix_node_creation_date {
