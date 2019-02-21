@@ -18,6 +18,7 @@ function dsv_internal_theme_preprocess_page(&$variables) {
 		$_SESSION['login_reloaded'] = 1;
 		header("Refresh:0");
 	}
+  //drupal_clear_css_cache();
 }
 
 function dsv_internal_theme_preprocess_node(&$variables) {
@@ -52,6 +53,21 @@ function dsv_internal_theme_preprocess_node(&$variables) {
 				t(': !datetime', array('!datetime' => format_date($variables['node']->changed, 'utan_tider')));
 		}
 	}
+}
+
+function dsv_internal_theme_preprocess_comment(&$variables) {
+  // Change the Permalink to display #1 instead of 'Permalink'
+  $comment = $variables['comment'];
+  $uri = entity_uri('comment', $comment);
+  $uri['options'] += array('attributes' => array(
+    'class' => 'permalink',
+    'rel' => 'bookmark',
+  ));
+  $variables['permalink'] = l('#' . $variables['comment']->cid, $uri['path'], $uri['options']);
+  $variables['submitted'] = t('!username commented on !datetime', array(
+    '!username' => $variables['author'],
+    '!datetime' => $variables['created'],
+  ));
 }
 
 /**

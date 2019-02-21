@@ -633,6 +633,10 @@ h4 {
 	padding-bottom: 0;
 }
 
+.view-latest-articles .views-field-comment-count {
+	display: inline-block;
+}
+
 .view-latest-articles .views-field-title,
 .view-latest-articles .views-field-title-field {
 	display: inline-block;
@@ -641,7 +645,7 @@ h4 {
 	margin-right: 4px;
 	/*text-transform: uppercase;*/
 	/*vertical-align: top;*/
-	width: 70%;
+	/*width: 70%;*/
 
 	/* Hyphenation stuff */
 /*	Cropped out if favour of js solution
@@ -894,6 +898,70 @@ We need to use Date type for Time only.
 .view-id-feed_calendar_items .views-field-body {
 	display: block;
 	margin-left: 50px;
+}
+
+.comment {
+    border-top: 1px solid gainsboro;
+    margin-top: 0.692em;
+    padding-top: 0.692em;
+}
+
+.comment .user-picture img {
+    display: block;
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+.comment .user-picture {
+    float: left;
+    width: 50px;
+}
+
+.comment .links {
+    color: #4e4e4e;
+    font-size: 0.92307em;
+    margin-bottom: 0.75em;
+    margin-top: 1em;
+}
+
+.comment > h3, .comment .submitted, .comment .content, .comment .links {
+    margin-left: 60px;
+}
+
+.comment .submitted {
+	margin-bottom: 8px;
+}
+
+.comment > h3 {
+	display: none;
+}
+
+.comment .submitted a.username {
+    font-style: normal;
+}
+
+.indented {
+	padding-left: 60px;
+}
+
+.node>.user-picture {
+	display: none
+}
+
+.comment-new {
+	background-color: honeydew;
+}
+
+.comment>span {
+	position: absolute;
+	margin-top: 60px;
+	margin-left: -40px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#subscriptions-ui-node-form {
+	margin-top: 12px;
 }
 
 @media(max-width: 398px) {
