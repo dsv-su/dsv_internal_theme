@@ -633,8 +633,15 @@ h4 {
 	padding-bottom: 0;
 }
 
-.view-latest-articles .views-field-comment-count {
+.view-latest-articles .views-field-comment-count,
+.view-latest-articles .views-field-new-comments {
 	display: inline-block;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.view-latest-articles .views-field-comment-count a,
+.view-latest-articles .views-field-new-comments a {
+	color: #e29051;
 }
 
 .view-latest-articles .views-field-title,
@@ -645,7 +652,7 @@ h4 {
 	margin-right: 4px;
 	/*text-transform: uppercase;*/
 	/*vertical-align: top;*/
-	/*width: 70%;*/
+	max-width: 70%;
 
 	/* Hyphenation stuff */
 /*	Cropped out if favour of js solution
