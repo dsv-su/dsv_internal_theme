@@ -18,7 +18,7 @@ function dsv_internal_theme_preprocess_page(&$variables) {
 		$_SESSION['login_reloaded'] = 1;
 		header("Refresh:0");
 	}
-  //drupal_clear_css_cache();
+ // drupal_clear_css_cache();
 }
 
 function dsv_internal_theme_preprocess_node(&$variables) {
@@ -153,6 +153,25 @@ function dsv_internal_theme_more_link ($variables) {
   } else {
     return '<div class="more-link">' . l(t('View more'), $variables['url'], array('attributes' => array('title' => $variables['title']))) . '</div>';    
   }
+}
+
+/**
+ * Implements template_preprocess_views_view().
+ */
+function dsv_internal_theme_preprocess_views_view(&$vars) {
+    $view = $vars['view'];
+    global $user;
+    $uid = $user->uid;
+    if ($view->name == 'latest_articles' && $view->current_display == 'block') {
+      $vars['footer'] = '<a href="nyhetsflode" class="pane-block">Visa fler</a> | <a href="user/'.$user->uid.'/subscriptions/taxa" class="pane-block">Prenumerera på Anslagstavlan</a>';
+    }
+    if ($view->name == 'feed_calendar_items') {
+      $vars['footer'] = '<a href="user/'.$user->uid.'/subscriptions/type" ">Prenumerera på Evenemang</a>';
+      if ($vars['more'] && !$vars['pager']) {
+        $vars['footer'] = '<a href="evenemang">Visa fler</a> | ' . $vars['footer'];
+        unset($vars['more']);
+      }
+    }
 }
 
 function dsv_internal_theme_breadcrumb ($variables) {

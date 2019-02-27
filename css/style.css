@@ -971,6 +971,16 @@ We need to use Date type for Time only.
 	margin-top: 12px;
 }
 
+#subscribe {
+	width: 100px;
+}
+
+#subscribe-body {
+	width: 300px;
+}
+
+#subscribe .
+
 @media(max-width: 398px) {
 	.view-latest-articles .views-field-body {
 		width: 100%;
