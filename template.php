@@ -38,6 +38,9 @@ function dsv_internal_theme_preprocess_node(&$variables) {
 				$variables['content']['body']['0']['#markup'] = str_replace('[[dsv_staff]]', '', $variables['content']['body']['0']['#markup']);
 			}
 		} else {
+      if ($variables['type'] == 'calendar_item') {
+        $variables['title_suffix'] = '<p class="calendar-title-suffix">Evenemang</p>';
+      }
 			$user=user_load($variables['uid']);
 			$name=format_username($user);
 			/*if (!isset($user->field_firstname['und'][0]['value']) || (!isset($user->field_lastname['und'][0]['value']))) {
@@ -156,20 +159,24 @@ function dsv_internal_theme_more_link ($variables) {
 }
 
 /**
- * Implements template_preprocess_views_view().
+ * Implements template_preprocess_views_view(). Adding subscribe-link below views.
  */
 function dsv_internal_theme_preprocess_views_view(&$vars) {
     $view = $vars['view'];
     global $user;
     $uid = $user->uid;
     if ($view->name == 'latest_articles' && $view->current_display == 'block') {
-      $vars['footer'] = '<a href="nyhetsflode" class="pane-block">Visa fler</a> | <a href="user/'.$user->uid.'/subscriptions/taxa" class="pane-block">Prenumerera på Anslagstavlan</a>';
+      $sub_anslag = subscriptions_get_subscription($uid, 'node', 'tid', 54);
+      $string = $sub_anslag ? "Redigera prenumeration" : "Prenumerera på Anslagstavlan";
+      $vars['footer'] = '<a href="nyhetsflode" class="pane-block">Visa fler</a> | <a href="user/'.$user->uid.'/subscriptions/taxa" class="pane-block">'.$string.'</a>';
     }
     if ($view->name == 'feed_calendar_items') {
-      $vars['footer'] = '<a href="user/'.$user->uid.'/subscriptions/type" ">Prenumerera på Evenemang</a>';
+      $sub_calendar = subscriptions_get_subscription($uid, 'node', 'type', 'calendar_item');
+      $string = $sub_calendar ? "Redigera prenumeration" : "Prenumerera på Evenemang";
+      $vars['footer'] = '<a href="user/'.$user->uid.'/subscriptions/type" ">'.$string.'</a>';
       if ($vars['more'] && !$vars['pager']) {
         $vars['footer'] = '<a href="evenemang">Visa fler</a> | ' . $vars['footer'];
-        unset($vars['more']);
+        $vars['more'] = NULL;
       }
     }
 }
