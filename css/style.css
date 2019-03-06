@@ -3,7 +3,8 @@
 /* Media queries */
 @media(max-width: 767px) {
 	.region.region-page-top {
-		margin-bottom: 20px;
+		/*margin-bottom: 20px;*/
+		background-color: rgb(155, 178, 206);
 	}
 
 	.container > .navbar-header {
@@ -996,6 +997,20 @@ We need to use Date type for Time only.
 	.view-latest-articles .views-field-title-field {
 		width: 100% !important;
 	}
+}
+
+.field-type-timefield table {
+	table-layout: initial;
+}
+
+.ui-timepicker-table, .ui-timepicker {
+	table-layout: initial;
+	font-size: 1em;
+	box-sizing: content-box;
+}
+
+.ui-timepicker-table td a {
+	width: 2em;
 }
 
 #toolbar {
