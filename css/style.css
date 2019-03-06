@@ -3,7 +3,7 @@
 /* Media queries */
 @media(max-width: 767px) {
 	.region.region-page-top {
-		/*margin-bottom: 20px;*/
+		padding-bottom-bottom: 20px;
 		background-color: rgb(155, 178, 206);
 	}
 
