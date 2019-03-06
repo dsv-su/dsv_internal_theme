@@ -1001,6 +1001,7 @@ We need to use Date type for Time only.
 
 .field-type-timefield table {
 	table-layout: initial;
+	width: 200px;
 }
 
 .ui-timepicker-table, .ui-timepicker {
