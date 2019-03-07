@@ -166,7 +166,7 @@ function dsv_internal_theme_preprocess_views_view(&$vars) {
     global $user;
     $uid = $user->uid;
     if ($view->name == 'latest_articles' && $view->current_display == 'block') {
-      $sub_anslag = subscriptions_get_subscription($uid, 'node', 'tid', 54);
+      $sub_anslag = subscriptions_get_subscription($uid, 'node', 'tid', 56);
       $string = $sub_anslag ? "Redigera prenumeration" : "Prenumerera på Anslagstavlan";
       $vars['footer'] = '<a href="nyhetsflode" class="pane-block">Visa fler</a> | <a href="user/'.$user->uid.'/subscriptions/taxa" class="pane-block">'.$string.'</a>';
     }
