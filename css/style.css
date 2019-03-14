@@ -1025,6 +1025,11 @@ We need to use Date type for Time only.
 	padding-right: 10px !important;
 }
 
+div.view-taxonomy-with-content + p {
+	text-align: right;
+	margin-top: 12px;
+}
+
 body.toolbar-drawer {
 	padding-top: 30px !important;
 }
