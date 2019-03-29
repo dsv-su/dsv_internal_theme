@@ -38,6 +38,9 @@ function dsv_internal_theme_preprocess_node(&$variables) {
 				$variables['content']['body']['0']['#markup'] = str_replace('[[dsv_staff]]', '', $variables['content']['body']['0']['#markup']);
 			}
 		} else {
+      if ($variables['type'] == 'calendar_item') {
+        $variables['title_suffix'] = '<p class="calendar-title-suffix">Evenemang</p>';
+      }
 			$user=user_load($variables['uid']);
 			$name=format_username($user);
 			/*if (!isset($user->field_firstname['und'][0]['value']) || (!isset($user->field_lastname['und'][0]['value']))) {

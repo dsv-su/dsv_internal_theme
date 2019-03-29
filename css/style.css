@@ -3,7 +3,8 @@
 /* Media queries */
 @media(max-width: 767px) {
 	.region.region-page-top {
-		margin-bottom: 20px;
+		padding-bottom-bottom: 20px;
+		background-color: rgb(155, 178, 206);
 	}
 
 	.container > .navbar-header {
@@ -971,11 +972,83 @@ We need to use Date type for Time only.
 	margin-top: 12px;
 }
 
+#subscribe {
+	width: 100px;
+}
+
+#subscribe-body {
+	width: 300px;
+}
+
+.calendar-title-suffix {
+	color: #d95e00;
+    font-size: 100%;
+	font-weight: bold;
+    line-height: normal;
+    padding-top: 3px;
+    font-family: Verdana,Arial,Helvetica,Sans-serif;
+    text-transform: uppercase;
+}
+
 @media(max-width: 398px) {
 	.view-latest-articles .views-field-body {
 		width: 100%;
 	}
 	.view-latest-articles .views-field-title-field {
 		width: 100% !important;
+	}
+}
+
+.field-type-timefield table {
+	table-layout: initial;
+	width: 200px;
+}
+
+.ui-timepicker-table, .ui-timepicker {
+	table-layout: initial;
+	font-size: 1em;
+	box-sizing: content-box;
+}
+
+.ui-timepicker-table td a {
+	width: 2em;
+}
+
+#toolbar {
+	margin: auto;
+	background-color: rgb(155,178,206);
+	padding: 0;
+}
+
+#toolbar div.toolbar-menu {
+	background-color: rgb(155,178,206);
+	padding-right: 10px !important;
+}
+
+div.view-taxonomy-with-content + p {
+	text-align: right;
+	margin-top: 12px;
+}
+
+body.toolbar-drawer {
+	padding-top: 30px !important;
+}
+
+
+@media screen and (min-width: 768px) {
+	#toolbar {
+		max-width: 720px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	#toolbar {
+		max-width: 940px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	#toolbar {
+		max-width: 1140px;
 	}
 }
