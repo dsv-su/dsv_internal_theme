@@ -1,6 +1,11 @@
 /** Custom CSS for the DSV internal web */
 
 /* Media queries */
+
+.time-default {
+	display: inline-block;
+}
+
 @media(max-width: 767px) {
 	.region.region-page-top {
 		padding-bottom-bottom: 20px;
@@ -1052,3 +1057,5 @@ body.toolbar-drawer {
 		max-width: 1140px;
 	}
 }
+
+.time-default {display: inline-block;}
