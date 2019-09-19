@@ -1,11 +1,6 @@
 /** Custom CSS for the DSV internal web */
 
 /* Media queries */
-
-.time-default {
-	display: inline-block;
-}
-
 @media(max-width: 767px) {
 	.region.region-page-top {
 		padding-bottom-bottom: 20px;
@@ -568,8 +563,8 @@ h4 {
 }
 
 .main-container .region-content img {
-	/*max-width: 100%;
-	height: auto !important*/
+	max-width: 100%;
+	height: auto !important
 }
 
 /* Home page top image styling */
@@ -590,8 +585,8 @@ h4 {
 }
 
 .view-news-feed-image img {
-	/*height: auto !important;
-	width: 100% !important;*/
+	height: auto !important;
+	width: 100% !important;
 }
 
 .view-news-feed > .view-content {
@@ -1057,5 +1052,3 @@ body.toolbar-drawer {
 		max-width: 1140px;
 	}
 }
-
-.time-default {display: inline-block;}
